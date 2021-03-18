@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\IP_Sniffer.csproj": {}
+    "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\IP_Sniffer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\IP_Sniffer.csproj": {
+    "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\IP_Sniffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\IP_Sniffer.csproj",
+        "projectUniqueName": "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\IP_Sniffer.csproj",
         "projectName": "IP_Sniffer",
-        "projectPath": "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\IP_Sniffer.csproj",
+        "projectPath": "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\IP_Sniffer.csproj",
         "packagesPath": "C:\\Users\\berth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\obj\\",
+        "outputPath": "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

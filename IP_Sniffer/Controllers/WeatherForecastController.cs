@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace IP_Sniffer.Controllers
@@ -24,11 +26,19 @@ namespace IP_Sniffer.Controllers
         }
 
         [HttpGet]
-        public Task<string> Get()
+        public Task<string> Get(bool allowForwarded = true)
         {
-            string ip = HttpContext.Connection.RemoteIpAddress.ToString();
-
-            return Task.FromResult(ip);
+            if (allowForwarded)
+            {
+                // if you are allowing these forward headers, please ensure you are restricting context.Connection.RemoteIpAddress
+                // to cloud flare ips: https://www.cloudflare.com/ips/
+                string header = (HttpContext.Request.Headers["CF-Connecting-IP"].FirstOrDefault() ?? HttpContext.Request.Headers["X-Forwarded-For"].FirstOrDefault());
+                if (IPAddress.TryParse(header, out IPAddress ip))
+                {
+                    return Task.FromResult(ip.ToString());
+                }
+            }
+            return Task.FromResult(HttpContext.Connection.RemoteIpAddress.ToString());
         }
     }
 }

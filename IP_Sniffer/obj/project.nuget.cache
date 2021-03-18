@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HTFR+f/5atUo7p2uZc1VbHpKyESlrll5ODwyMqXMevXbJ6/I6D2IuSJipzLDD6mBz2ox1UVMPp3alvwYNFf9Ew==",
+  "dgSpecHash": "spo3T6D3ctRp4qLYN12+Lp6ugVbTHrdYV9v2EiJ8Hq1o0tj5Sxb16eIJHp21tIv1mIMZbrpHh4hrSauCYVX7sw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\berth\\source\\repos\\IP_Sniffer\\IP_Sniffer\\IP_Sniffer.csproj",
+  "projectFilePath": "C:\\Users\\berth\\Documents\\nginx-proxy-aspnet-test\\IP_Sniffer\\IP_Sniffer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
