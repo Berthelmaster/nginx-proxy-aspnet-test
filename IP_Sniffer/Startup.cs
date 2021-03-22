@@ -26,6 +26,8 @@ namespace IP_Sniffer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,13 @@ namespace IP_Sniffer
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:8080")
+                       .AllowAnyHeader()
+                       .AllowAnyMethod()
+                       .AllowAnyOrigin()
+                );
 
             app.UseAuthorization();
 
